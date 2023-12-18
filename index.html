@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Instant Skeleton</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>From Multiple Views to 3D Skeletons: A Comprehensive Reconstruction Approach</h1>
+						<span class="logo"><img src="images/overview_of_the_method.svg" alt="" /></span>
+
+						<p>Overview of the method, consisting of three main steps. 
+										The input data consists of multi-view images representing the same scene with characters for whom we want to reconstruct the 3D skeleton. 
+										(1) The first step involves extracting 2D skeletons, which need to be (2) associated with each other to create groups of 
+										skeletons corresponding to the same character seen in different views. Once we have groups of 2D skeletons 
+										belonging to the same character, we can (3), using the obtained homologous points, reconstruct the 3D skeleton through 
+										triangulation. To expedite the process, the skeleton association step can be replaced by (2') a tracking step that leverages 
+										the already labeled skeletons from the previous frame. The reconstructed 3D skeletons are then used in the images of the next 
+										frame, either in the case of (2') tracking, where they are reprojected in 2D onto each view as additional labeled skeletons, or 
+										in the case of (2) scene update, where they are used to ensure temporal coherence in skeleton labeling.<br />
+					</header>
+
+
+
+				<!-- Main -->
+					<div id="main">
+						<!-- First Section -->
+							<section id="parcours" class="main special">
+								<header class="major">
+									<h2>Results</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/duel.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Duel between two characters.<br/>
+									</li>
+																		<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/five_persons.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Five people standing, static, then raising their arms.<br/>
+
+									</li>
+																		<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/two_people.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Two people walking on a platform.<br/>
+
+									</li>
+																		<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/two_people_standing.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Scene with two people standing.<br/>
+									</li>
+																		<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/three_people_walking.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Scene with two people sitting on the ground, one standing, both stand up, and all three walk.<br/>
+									</li>
+																		<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/jump.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Scene with six people holding a large board, on which a 6th person crouches before standing up. Strong occlusions.<br/>
+									</li>
+																		<li>
+										<video width="320" height="240" controls>
+										  <source src="videos/four_people.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+										</video>
+										<p>Scene with four moving characters and occlusions.<br/>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Link to the article</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
